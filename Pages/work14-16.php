@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 spl_autoload_register(function (string $all_data) {
     require_once __DIR__ . '/../src/' . str_replace('\\', '/', $all_data) . '.php';
 });
